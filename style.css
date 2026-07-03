@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    color: #1a1a1a;
+
+    /* Aged paper base */
+    background: #e8e1d3;
+}
+
+/* PAPER TEXTURE + GRIME OVERLAY */
+.page {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 30px 40px;
+
+    background: #f3ead7;
+    position: relative;
+
+    box-shadow: 0 0 35px rgba(0,0,0,0.25);
+    overflow: hidden;
+}
+
+/* subtle grain + aging */
+.page::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(rgba(0,0,0,0.05) 1px, transparent 1px);
+    background-size: 3px 3px;
+    opacity: 0.25;
+    pointer-events: none;
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    border-bottom: 3px solid #000;
+    padding-bottom: 10px;
+}
+
+.header h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 52px;
+    margin: 0;
+
+    /* ink bleed effect */
+    text-shadow: 0.5px 0.5px 0px rgba(0,0,0,0.4);
+}
+
+.header p {
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid #000;
+    margin-bottom: 20px;
+}
+
+/* CONTENT */
+.content {
+    display: block;
+}
+
+/* MAIN ARTICLE */
+.main-article h2 {
+    font-size: 34px;
+    font-family: "Playfair Display", serif;
+    margin-bottom: 5px;
+
+    text-shadow: 0.4px 0.4px 0px rgba(0,0,0,0.35);
+}
+
+.main-article h3 {
+    font-size: 15px;
+    font-style: italic;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* DROP CAP */
+.dropcap::first-letter {
+    float: left;
+    font-size: 52px;
+    font-weight: bold;
+    padding-right: 8px;
+    line-height: 1;
+}
+
+/* QUOTE */
+blockquote {
+    border-left: 3px solid #000;
+    padding-left: 15px;
+    font-style: italic;
+    margin: 20px 0;
+}
+
+/* IN THIS ISSUE BOX */
+.issue-box {
+    margin-top: 30px;
+    border-top: 2px solid #000;
+    padding-top: 15px;
+}
+
+.issue-box h4 {
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.issue-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.issue-item h5 {
+    margin: 0;
+    font-size: 13px;
+}
+
+.issue-item p {
+    font-size: 12px;
+    color: #333;
+}
+
+.newspaper-footer, .print-footer {
+    margin-top: 40px;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 0.85rem;
+    color: #555;
+    text-align: center;
+}
+
+.footer-divider {
+    border: 0;
+    border-top: 1px solid #333;
+    margin-bottom: 15px;
+}
+
+/* For the traditional print double-border look */
+.footer-border-double {
+    border-top: 3px double #333;
+    margin-bottom: 10px;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
