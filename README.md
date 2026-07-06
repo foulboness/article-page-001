@@ -1,6 +1,9 @@
-# Literature Article
+# Article
 
 A responsive, editorial-style article webpage built with HTML and CSS. This project focuses on typography, readability, and a newspaper-inspired layout designed for long-form reading.
+
+<img width="1259" height="891" alt="image" src="https://github.com/user-attachments/assets/f7c2ffbf-35a7-4cc7-9bb7-34501eb1552d" />
+
 
 ---
 
