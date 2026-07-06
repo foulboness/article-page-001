@@ -58,7 +58,7 @@ Article-Page/
 1. Clone the repository.
 
 ```bash
-git clone "https://github.com/foulboness/article-page.git"
+git clone "https://github.com/foulboness/article-page-001.git"
 ```
 
 2. Open the project folder.
